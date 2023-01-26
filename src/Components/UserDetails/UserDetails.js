@@ -11,10 +11,7 @@ const UserDetails = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setPerson(data));
-    },[])}
-
-
-console.log(person);
+    },[]);
 
 
 
