@@ -6,12 +6,12 @@ const UserDetails = () => {
     const {PersonId} = useParams();
     const [person, setPerson] = useState({})
 
-    useEffect((PersonId) => {
+    useEffect(() => {
         const url = `https://jsonplaceholder.typicode.com/users/${PersonId}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setPerson(data));
-    },[]);
+    }, [PersonId]);
 
 
 
