@@ -1,0 +1,16 @@
+.user-card{
+    width: 30%;
+    height: auto;
+    border: 1px solid rebeccapurple;
+    text-align: left;
+    padding: 1%;
+    background-color: darkgray;
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+.main-btn{
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    background-color: rosybrown;
+}
