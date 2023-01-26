@@ -7,10 +7,11 @@ const UserDetails = () => {
     const [person, setPerson] = useState({})
 
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/users/${PersonId}`)
+        const url = `https://jsonplaceholder.typicode.com/users/${PersonId}`;
+        fetch(url)
         .then(res => res.json())
-        .then(data => setPerson(data))
-    }, []);
+        .then(data => setPerson(data));
+    },[])}
 
 
 console.log(person);
