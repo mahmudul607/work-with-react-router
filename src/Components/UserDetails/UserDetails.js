@@ -6,7 +6,7 @@ const UserDetails = () => {
     const {PersonId} = useParams();
     const [person, setPerson] = useState({})
 
-    useEffect(() => {
+    useEffect((PersonId) => {
         const url = `https://jsonplaceholder.typicode.com/users/${PersonId}`;
         fetch(url)
         .then(res => res.json())
